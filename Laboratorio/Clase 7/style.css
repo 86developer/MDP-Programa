@@ -1,0 +1,113 @@
+:root {
+    --primario: rgb(0, 122, 0);
+    --primarioClaro: rgb(38, 211, 38);
+    --secundario: #FFCE00;
+    --secundarioOscuro: rgb(233, 187, 2);
+    --blanco: #FFF;
+    --negro: #000;
+
+    --fuentePrincipal: 'Staatliches', cursive;
+}
+
+body {
+    background-color: var(--primario);
+
+}
+
+h1,
+h2,
+h3 {
+    color: var(--secundario);
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primarioClaro);
+}
+
+a {
+    color: var(--secundario);
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4rem;
+}
+
+/**Productos**/
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+}
+
+.producto {
+    flex-basis: calc(25% - 4rem);
+    flex-grow: 1;
+    margin: 0.5rem;
+    margin-bottom: 2rem;
+    background-color: var(--primarioClaro);
+    box-shadow: #0000001e;
+    border-radius: 1rem;
+}
+
+
+
+.productoImagen {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.productoInformacion p {
+    margin: auto;
+}
+
+.productoNombre {
+    font-size: 3rem;
+    color: var(--blanco);
+}
+
+.productoPrecio {
+    font-size: 4rem;
+    color: var(--secundario);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.productoNombre,
+.productoPrecio {
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.boton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(250, 27, 27, 0.801);
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+    text-align: center;
+    color: var(--blanco);
+    border: none;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
