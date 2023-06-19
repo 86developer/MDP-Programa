@@ -10,8 +10,10 @@
 }
 
 body {
-    background-color: var(--primario);
-
+    background-image: url(./img/fondo-carta-restaurante-madrid.png);
+    background-repeat: repeat;
+    max-width: 120rem;
+    margin: 0 auto;
 }
 
 h1,
@@ -23,6 +25,13 @@ h3 {
     font-size: 2rem;
 }
 
+p {
+    font-family: var(--fuentePrincipal);
+    font-size: 1rem;
+    color: var(--secundario);
+
+}
+
 img {
     max-width: 100%;
 }
@@ -32,10 +41,11 @@ img {
     margin: 0 auto;
 }
 
-.header {
+.header,
+.contenedor_footer {
     display: flex;
     justify-content: center;
-    background-color: var(--primarioClaro);
+
 }
 
 a {
@@ -110,4 +120,13 @@ a {
     border: none;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+}
+
+/**Footer**/
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 5rem;
+    width: 3rem;
 }
